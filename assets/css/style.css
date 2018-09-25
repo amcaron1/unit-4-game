@@ -23,14 +23,18 @@ h3 {
 }
 
 .scoreBox{
-    border: solid 2px black;
+    border: solid 4px rgb(17, 4, 92);
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    padding-top: 10px;
 }
 
 .rulesBox{
-    border: solid 2px black;
+    border: solid 4px rgb(17, 4, 92);
     padding-left: 30px;
+    background-color: white;
+    padding-top: 10px;
 }
 
 .rulesHeading{
@@ -38,7 +42,20 @@ h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#resetButtonH{
+    border-radius: 5px;
+}
+
 .crystal-image {
     width: 100px;
     height: 100px;
-  }
+    opacity: 0.8;
+}
+
+.crystal-image:hover {
+    opacity: 1;
+}
+
+.crystal-image:active {
+  transform: translateY(4px);
+}
