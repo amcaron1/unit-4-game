@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  // Array of crystal and their pictures
   var crystals = [
     {name: "diamond", picture: "assets/images/diamond1.png"},
     {name: "emerald", picture: "assets/images/emerald1.png"},
@@ -11,12 +11,12 @@ $(document).ready(function() {
   var winsCounter = 0;
   var lossesCounter = 0;
   var gameOver = false;
-  var targetNumber = Math.floor(Math.random() * 101) + 20;
+  var targetNumber = Math.floor(Math.random() * 102) + 19;
 
   // Creates target number.
   $("#targetNumberH").text(targetNumber);
  
-  // Creates each crystal
+  // Creates each crystal dynamically.  This was not necessary, but wanted to practice dynamic creation
   for (var i = 0; i < crystals.length; i++) {
 
     // For each iteration, an imageCrystal is created.
@@ -29,7 +29,7 @@ $(document).ready(function() {
     // Each imageCrystal is given a src link to the crystal image
     imageCrystal.attr("src", crystals[i].picture);
 
-    // Each imageCrystal is given a data attribute called data-crystalValue.
+    // Each imageCrystal is given a data attribute called data-crystalValue that contains a random number 1-12
     imageCrystal.attr("data-crystalvalue", Math.floor(Math.random() * 11) + 1);
 
     // Each imageCrystal is given an id in order to reset the data-crystalvalue.
