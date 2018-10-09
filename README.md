@@ -10,3 +10,7 @@
 
 - Key or new skills
     - Use "hover", "active". "opacity", and "transform" to make button clicking more dynamic
+
+- Links
+    - Deployed: https://amcaron1.github.io/unit-4-game/
+    - GitHub repository: https://github.com/amcaron1/unit-4-game/
