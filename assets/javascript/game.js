@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // Array of crystal and their pictures
+  // Array of crystals and their pictures
   var crystals = [
     {name: "diamond", picture: "assets/images/diamond1.png"},
     {name: "emerald", picture: "assets/images/emerald1.png"},
