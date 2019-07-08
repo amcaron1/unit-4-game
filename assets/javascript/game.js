@@ -13,6 +13,9 @@ $(document).ready(function() {
   var gameOver = false;
   var targetNumber = Math.floor(Math.random() * 102) + 19;
 
+  // Disables the reset button until after a game is completed
+  $('#resetButtonH').prop('disabled', true);
+
   // Creates target number.
   $("#targetNumberH").text(targetNumber);
  
@@ -63,6 +66,7 @@ $(document).ready(function() {
         $("#winsCounterH").text(winsCounter);
         $("#messageH").html("You win! &nbsp; &nbsp; Click Reset to start a new game.");
         gameOver = true;
+        $('#resetButtonH').prop('disabled', false);
       }
 
       // If the player exceeds the target number, then the loss counter is incremented and a loss message is displayed
@@ -71,6 +75,7 @@ $(document).ready(function() {
         $("#lossesCounterH").text(lossesCounter);
         $("#messageH").html("Sorry, you lost! &nbsp; &nbsp; Click Reset to start a new game.");
         gameOver = true;
+        $('#resetButtonH').prop('disabled', false);
       }
     }
   });
@@ -90,6 +95,7 @@ $(document).ready(function() {
         console.log(crystalNumber);
         $(crystalNumber).attr("data-crystalvalue", Math.floor(Math.random() * 11) + 1);
       }
+      $('#resetButtonH').prop('disabled', true);
     }
   })
 
