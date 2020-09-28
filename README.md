@@ -1,6 +1,6 @@
 # Crystal Game
 
-OverView
+Overview
 
 A game that requires players to select crystal icons that have random values associated with them.  The object is to accumulate a specified number without exceeding that number.
 
